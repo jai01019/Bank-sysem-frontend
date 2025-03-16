@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+Banking App Project
+This is a full-stack banking application that allows customers and bankers to interact with the system. The app includes features such as user authentication (login/signup), role-based access (customer/banker), and transaction management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1.Table of Contents
+  Frontend
+   Overview
+   Technologies Used
+   Installation and Setup
+   Folder Structure
+   API Integration
+   Key Features
 
-## Available Scripts
+Frontend
+ Overview
+ The frontend is built using React.js and provides a user-friendly interface for customers and bankers to interact with the application. It includes login, signup, dashboard, and transaction management functionalities.
 
-In the project directory, you can run:
 
-### `npm start`
+Technologies Used
+ React.js : For building the frontend UI.
+ React Router DOM : For routing between pages.
+ Axios/Fetch API : For making HTTP requests to the backend.
+ Environment Variables : For managing API URLs and sensitive data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation and Setup
+ 1 Clone the Repository :
+    git clone https://github.com/your-repo/banking-app.git
+    cd banking-app/frontend
 
-### `npm test`
+2 Install Dependencies
+  npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3 Set Environment Variables
+  Create a .env file in the frontend folder and add the following:
+  REACT_APP_BASE_URL=http://localhost:5000
 
-### `npm run build`
+4 Run the Development Server
+  npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/frontend
+  ├── public/            # Static assets
+  ├── src/
+  │   ├── components/    # Reusable components (e.g., Login, SignUp)
+  │   ├── App.js         # Main application component
+  │   ├── index.js       # Entry point
+  │   └── styles/        # Global styles (optional)
+  ├── .env               # Environment variables
+  ├── package.json       # Dependencies and scripts
+  └── README.md          # Frontend documentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+API Integration
 
-### `npm run eject`
+ The frontend interacts with the backend via REST APIs. Below are the key endpoints used:
+    ![image](https://github.com/user-attachments/assets/38e91af8-c482-4b7e-b119-93bea22bed83)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Key Features
+ 1 Role-Based Access :
+    Customers can view their balance and transaction history.
+    Bankers can manage customer accounts.
+2 Authentication :
+    Secure login and signup using JWT tokens.
+3 Responsive Design :
+    Styled for optimal viewing on desktop and mobile devices.
+4 Error Handling :
+    Displays appropriate error messages for invalid inputs or API failures
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     
+ 
