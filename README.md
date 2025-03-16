@@ -24,7 +24,7 @@ Technologies Used
 
 Installation and Setup
  1 Clone the Repository :
-    git clone https://github.com/your-repo/banking-app.git
+    git clone https:[//github.com/your-repo/banking-app.git](https://github.com/jai01019/Bank-sysem-frontend)
     cd banking-app/frontend
 
 2 Install Dependencies
